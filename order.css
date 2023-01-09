@@ -1,0 +1,18 @@
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+li{
+float:right;
+}
+li a{
+display:block;
+padding:0px 10px;
+text-decoration:none; color:black;
+}
+body
+{background-image:url('orderbg.jpg');background-repeat:no_repeat;
+background-size:100% 100%;
+}

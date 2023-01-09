@@ -1,0 +1,109 @@
+<html>
+<title>order</title>
+<head></head>
+<link rel="stylesheet" href="order.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<Body>
+<div>
+<ul>
+<li><b><a href="contact.html" target="_blank">Contact</a></b></li>
+<li><a href="Order.html" target="_blank"><b>Orders</b></a></li>
+<li><a href="about.html" target="_blank"><b>About</b></a></li>
+<li><a href="Myweb.html" target="_blank"><b>Home</b></a></li>
+<li style="float:left; font-size:50; font-type:monotype corsiva;">Studykart.com</li><br>
+</ul>
+</div>
+<div style="position:absolute;top:70;left:10;">
+<b style="font-size:25;color:red;font-type:aerial;"><i>Explore Your Knowledge</i></b>
+</div>
+<div style="position:absolute;top:10;left:630;">
+<b style="font-size:50;font-type:aerial;">Place Order</b>
+</div>
+<div style="position:absolute; top:100;left:350;">
+<marquee behavior="scroll" direction="left">
+<img src="box.jpg" width="500" height="200" alt="Natural">
+<img src="box2.jpg" width="500" height="200" alt="Natural">
+<img src="box3.jpg" width="500" height="200" alt="Natural">
+</marquee>
+</div>
+<img src="order1.jfif" style="position:absolute;top:110;left:10;width:200;height:200;">
+<img src="handbook.jfif" style="position:absolute;top:400;left:10;width:200;height:200;">
+<div style="position:absolute;top:330;left:700;">
+<b style="font-size:25;color:red;font-type:monotype corsiva;"><i><u>Receipt</u></i></b>
+</div>
+<div style="position:absolute;top:370;left:500;">
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:#ADD8E6;
+}
+</style>
+<table>
+  <tr>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td><input type="text" id="text1"/></td>
+    <td><input type="text" id="text2"/></td>
+    <td><input type="text" id="text3"/></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="text4"/></td>
+    <td><input type="text" id="text5"/></td>
+    <td><input type="text" id="text6"/></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="text7"/></td>
+    <td><input type="text" id="text8"/></td>
+    <td><input type="text" id="text9"/></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="text10"/></td>
+    <td><input type="text" id="text11"/></td>
+    <td><input type="text" id="text12"/></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="text13"/></td>
+    <td><input type="text" id="text14"/></td>
+    <td><input type="text" id="text15"/></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="button" value="Total" onclick="Total()"/></td>
+    <td><input type="text" id="text18"/></td>
+  </tr>
+<script>
+
+function Total(){
+document.getElementById("text18").value=
+Number(document.getElementById("text3").value) + Number(document.getElementById("text6").value) + Number(document.getElementById("text9").value) + Number(document.getElementById("text12").value) + Number(document.getElementById("text15").value)
+}
+</script>
+ </table>
+</div>
+<div style="position:absolute;top:670;left:700;">
+<input type="button" value="Pay Online" onclick="myFunction()"/>
+<script>
+function myFunction() {
+  alert("Payment Successful");
+}
+</script>
+</div>
+<img src="order2.png" style="position:absolute;top:320;right:10;width:250;height:170;">
+<img src="thankyou.png" style="position:absolute;top:520;right:10;width:250;height:200;">
+</body>
+</html>
